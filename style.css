@@ -1,0 +1,182 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: J_slab;
+  src: url(./josefin-slab/JosefinSlab-Light.ttf);
+}
+@font-face
+{
+  font-family: heading_font;
+  src: url(./josefin-slab/JosefinSlab-Bold.ttf);
+}
+body
+{
+  font-family: J_slab;
+}
+h1,h2
+{
+  font-family: heading_font;
+}
+html
+{
+  font-size: 10px;
+}
+h1
+{
+  font-size: 5rem;
+}
+h2
+{
+  font-size: 2rem;
+}
+p,ul,ol
+{
+  font-size: 1.5rem;
+}
+p
+{
+  line-height: 150%;
+}
+header h1 
+{
+  text-align: center;
+}
+h1,h2 
+{
+  letter-spacing: 2px;
+
+}
+body
+{
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+section h2 + p
+{
+margin-left: 20px;
+}
+a:link
+{
+  color: #a66;
+ 
+}
+a:visited
+{
+  color: #a66;
+}
+a:focus
+{
+  color: #a66;
+  text-decoration: none;
+  outline: none;
+}
+a:hover
+{
+  color: #a66;
+  text-decoration: none;
+}
+a:active
+{
+  color: #a66;
+  text-shadow: 1px 1px 1px red,
+  2px 2px 2px red;
+}
+section p > a /* Lấy ra tag a có link ra bên ngoài trang web */
+{
+background-image: url(./external-link-52.png);
+background-size: 16px 16px;
+background-repeat: no-repeat;
+padding-right: 19px;
+background-position: right;
+}
+li
+{
+  line-height: 150%;
+}
+p
+{
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/*ul,ol có margin top,bottom mặc định là 15px->>tổng khoảng cách =30px bẳng khoảng cách giữa các p
+ul
+{
+  list-style-type:square;
+}
+*/
+nav a
+{
+text-decoration: none;
+}
+nav ul 
+{
+  list-style: none;
+}
+nav ul li 
+{
+  display: block;
+  width: 163px;
+  height: 51px;
+  border: 1px solid #a66;
+  /*CĂN GIỮA CHỮ TRONG BOX (Đặt line-height=width)*/
+  text-align: center;
+  line-height: 51px;
+  margin-bottom: 13px;
+}
+nav ul li:nth-child(3)
+{
+  background-color: #a66;
+  
+}
+nav ul li:nth-child(3) a
+{
+ color: #fff;
+  
+}
+
+
+
